@@ -1,0 +1,166 @@
+int func(int x, int y) {
+    int z;    
+    z = 2;
+    if (z < y) {
+        int f;  
+	f = 0; 
+        z = y + x;
+	cout << z;//10
+	 cout << "\n";
+        y = z + z;
+        f = 2;
+        return f; //expect an 5
+    }
+    if (z > y) {
+        int c;    
+        c = 5;
+        if (c == 5) {
+            int d;    
+            z = 6;
+	cout << z; //6
+        }  
+    }
+	z = z+1;
+    return z;
+}
+
+
+bool iffy(int booly) {
+
+int p;
+p = booly;
+
+
+if (p == 1) {
+
+return true;
+
+}
+
+else {
+
+return false;
+
+}
+
+
+}
+
+
+int whiley(int whil) {
+
+int ct;
+ct = whil;
+
+while (ct < 20) {
+
+ct = ct+1;
+cout << ct;
+cout << "\n";
+
+}
+
+return ct; 
+
+}
+
+void maths (int sprk) {
+
+int extra;
+extra = sprk;
+cout << sprk + 2;
+
+cout <<"\n";
+cout << "Should've been 12\n"; 
+cout << extra/2;
+cout <<"\n";
+cout << "Should've been 5\n" ;
+cout << extra * 2;
+
+cout <<"\n";
+cout << "Should've been 20\n"; 
+cout << extra - 2;
+
+cout <<"\n";
+cout << "Should've been 8\n" ;
+
+cout << extra > 2;
+cout <<"\n";
+cout << "Should've been 1\n"; 
+cout << extra < 2;
+cout << "\n";
+cout << "Should've been 0\n" ;
+
+cout << extra >= 0;
+cout << "\n";
+cout << "Should've been 1\n" ;
+
+cout << extra == 10;
+cout <<"\n";
+cout << "Should've been 1\n" ;
+cout << extra <= 0;
+cout << "\n";
+cout << "Should've been 0\n";
+cout << extra != 7;
+cout << "\n";
+cout << "Should've been 1\n";
+
+}
+
+
+
+int doubleplus (int spark) {
+
+int w;
+int v;
+w = spark;
+
+
+
+cout << "PostDec" ;
+cout << v;
+cout << "\n";
+v--;
+cout << v;
+cout << "\n";
+
+
+return w; 
+
+
+}
+
+
+void main() {
+	bool bl;
+	int i;
+	int j;
+	j = 5;
+	i = -j;
+    cout << "Hello world!";
+    cout << "\n";
+
+    cout << func(5,5); //
+    cout << "\n";
+
+    
+    cout << iffy(0); 
+    cout << "\n";
+    //cout << doubleplus(23); issues
+    cout << whiley(5); 
+	cout << "\n";
+	maths(10);
+	//meh(false);
+    
+	cout << "\n";
+	cout << i;
+	bl = false;
+	if (!bl){
+		cout << "\n";
+		cout << "In if";
+	}
+
+
+
+}
+
